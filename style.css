@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    position: relative;
+}
+.header-container{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+.nav{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.nav-list{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+
+}
+.nav-list-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+.nav-link:hover{
+    text-decoration: underline;
+}
+.logo-image{
+    width: 70px;
+    height: 70px;
+    clip-path: circle();
+}
+.regis-btn{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 16px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    gap: 2px;
+    margin-top: -5px;
+}
+.regis-btn:hover{
+    background-color: darkgray;
+}
+.first-section{
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: url(./images/bgi.jpg) no-repeat;
+    background-size: cover;
+
+}
+.color-sep{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding: 100px;
+    opacity: 0.8;
+    color: white;
+
+}
+.text-cont{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.text-cont h1{
+    font-size: 36px;
+}
+.text-cont p{
+    font-size: 20px;
+    margin-top: 32px;
+}
+
+.btn-cont{
+    margin-top: 32px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+.login-btn, .reg-btn{
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 5px 10x;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.login-btn{
+    background-color: white;
+}
+.login-btn:hover{
+    background-color: antiquewhite;
+}
+.reg-btn{
+    background-color: red;
+    color: white;
+}
+.reg-btn:hover{
+    background-color: indianred;
+}
+.second-section{
+    background: url(./images/features.svg) no-repeat;
+    background-size: cover;
+    min-height: fit-content;
+}
+.color-sep2{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.95;
+    padding: 100px;
+    color: black;
+
+}
+.content-side h1{
+    text-align: center;
+    font-size: 24px;
+}
+.features-hr{
+    width: 100px;
+    border: 3px solid yellowgreen;
+    margin: 32px auto;
+}
+.advert-text{
+    text-align: center;
+    margin: 32px 0;
+    font-size: 24px;
+}
+.box-carrier{
+    display: flex;
+    gap: 16px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+.box-carrier > div{
+    width: 50%;
+    display: flex;
+    gap: 4px;
+    justify-content: space-between;
+}
+.display-box{
+    width: 250px;
+    height: 300px;
+    background-color: antiquewhite;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    padding: 10px;
+}
+.icon-resize{
+    font-size: 64px;
+}
+.display-box p{
+    text-align: center;
+    font-weight: 500;
+}
+.display-box:hover{
+    margin-top: -8px;
+}
+.iframe-cont{
+    width: 100%;
+    padding: 100px;
+    min-height: 1000px;
+}
+
+.mtn-table{
+    margin: 64px auto;
+    width: 100%;
+    height: 1000px;
+    background-color: yellow;
+    border-radius: 16px;
+    padding: 20px;
+
+}
+.mtn-logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 45%;
+    clip-path: circle();
+}
+.mtn-table th{
+    border-bottom: 2px solid white;
+    padding: 7px;
+    text-align: left;
+    font-size: 18px;
+}
+.mtn-table td{
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+    font-weight: 600;
+}
+@media screen and (max-width: 1045px) {
+    .regis-btn{
+        display: none;
+    }
+    .nav-list{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 885px) {
+    .text-cont{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .nav-list{
+        display: none;
+    }
+    .text-cont{
+        width: 100%;
+    }
+    .iframe-cont > div{
+        overflow: scroll;
+    }
+}
+@media screen and (max-width: 550px) {
+    .color-sep2, .color-sep, .iframe-cont{
+        padding: 50px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .color-sep{
+        min-height: 100%;
+    }
+    .color-sep2, .color-sep, .iframe-cont{
+        padding: 10px;
+    }
+    .text-cont h1{
+        font-size: 18px;
+    }
+    .text-cont p{
+        font-size: 16px;
+    }
+    .btn-cont{
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .color-sep2, .color-sep, .iframe-cont{
+        padding: 5px;
+    }
+    .text-cont h1{
+        font-size: 16px;
+    }
+    .text-cont p{
+        font-size: 14px;
+    }
+    .btn-cont{
+        flex-direction: column;
+        gap: 8px;
+    }
+}
