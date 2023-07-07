@@ -20,6 +20,20 @@ body{
     position: fixed;
     top: 0;
 }
+.menu{
+    width: 40px;
+    height: 40px;
+    display: none;
+    position: absolute;
+    right: 30px;
+}
+.close{
+    width: 30px;
+    height: 25px;
+    display: none;
+    position: absolute;
+    right: 30px;
+}
 .nav{
     display: flex;
     width: 80%;
@@ -287,6 +301,10 @@ body{
 @media screen and (max-width: 1045px) {
     .regis-btn{
         display: none;
+    }
+    .menu{
+        display: block;
+        margin-top: -10px;
     }
     .nav-list{
         width: 100%;

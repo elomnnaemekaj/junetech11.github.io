@@ -11,7 +11,7 @@
     <header class="header-container">
         <img src="./images/logo.jpg" alt="logo" class="logo-image">
         <nav class="nav-main nav">
-            <ul class="nav-list">
+            <ul class="nav-list" id="nav_list">
                 <li class="nav-list-item"><a href="#" class="nav-link">Home</a></li>
                 <li class="nav-list-item"><a href="#features" class="nav-link">Features</a></li>
                 <li class="nav-list-item"><a href="#about" class="nav-link">About</a></li>
@@ -23,7 +23,11 @@
                 <li class="nav-list-item"><a href="#" class="nav-link">Login</a></li>
             </ul>
             <span>
-                <button class="regis-btn"><i class="fa-solid fa-cart-shopping"></i> Register Now</button>
+                <button class="regis-btn" id="regis_btn"><i class="fa-solid fa-cart-shopping" id="cart_img"></i> Register Now</button>
+            </span>
+            <span>
+                <img src="./images/menu.svg" alt="menu" class="menu" id="menu_btn">
+                <img src="./images/close.svg" alt="close" class="close" id="close_btn">
             </span>
         </nav>
     </header>
@@ -712,5 +716,7 @@
             </div>
         </section>
     </main>
+
+    <script src="index.js"></script>
 </body>
 </html>
