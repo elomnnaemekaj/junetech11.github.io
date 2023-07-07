@@ -339,7 +339,7 @@ body{
     }
 }
 @media screen and (max-width: 550px) {
-    .color-sep2, .color-sep, .iframe-cont, .color-sep3{
+    .header-container, .color-sep2, .color-sep, .iframe-cont, .color-sep3{
         padding: 50px;
     }
     .pic-con{
@@ -352,7 +352,7 @@ body{
     .color-sep{
         min-height: 100%;
     }
-    .color-sep2, .color-sep, .iframe-cont{
+    .header-container, .color-sep2, .color-sep, .iframe-cont{
         padding: 10px;
     }
     .text-cont h1{
@@ -371,7 +371,7 @@ body{
     }
 }
 @media screen and (max-width: 320px) {
-    .color-sep2, .color-sep, .iframe-cont{
+    .header-container, .color-sep2, .color-sep, .iframe-cont{
         padding: 5px;
     }
     .text-cont h1{
