@@ -15,7 +15,7 @@ function revealMenu() {
         display: block;
         position: absolute;
         top: 70px;
-        right: 50px;
+        right: 20px;
     
     `
     } else if ((width <= 800)){
@@ -26,7 +26,7 @@ function revealMenu() {
         gap:8px;
         position: absolute;
         top: 100px;
-        left: 100px;
+        right: 0;
         background-color: whitesmoke;
         padding: 10px;
     
@@ -35,7 +35,7 @@ function revealMenu() {
         display: block;
         position: absolute;
         top: 350px;
-        left: 100px;
+        right: 0;
         background-color: whitesmoke;
         color:black;
         border-radius:0;
