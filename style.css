@@ -69,6 +69,9 @@ body{
     height: 70px;
     clip-path: circle();
 }
+.advert{
+    animation: adverts 8s ease-in-out 0s infinite alternate forwards;
+}
 .regis-btn{
     padding: 10px 15px;
     border: none;
@@ -420,4 +423,11 @@ body{
         flex-direction: column;
         gap: 8px;
     }
+}
+@keyframes adverts {
+        0%   {color:white;}
+        25%  {color:yellowgreen;}
+        50%  {color:yellow;}
+        75%  {color:yellowgreen;}
+        100% {color:white;}
 }
