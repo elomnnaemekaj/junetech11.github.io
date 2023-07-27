@@ -4,7 +4,7 @@ let closeBtn = document.getElementById("close_btn");
 let navList = document.getElementById("nav_list");
 let cart = document.getElementById("cart_img");
 let width = window.innerWidth;
-
+let myAdvert = document.getElementById("myAdvert");
 
 menuBtn.onclick = revealMenu;
 closeBtn.onclick = HideMenu;
@@ -62,3 +62,24 @@ function HideMenu() {
     closeBtn.style.display = "none";
     menuBtn.style.display = "block";
 }
+
+const advs = ["We Give Best lasting Data Quality", "We Give Best Customers support", "We Give Best Business Offers"]
+let count = 0;
+setInterval(timeChange, 8000)
+
+function timeChange(){
+    // while (count >= 0){
+    if (count == 0){
+        myAdvert.innerHTML = advs[0];
+    } else if (count == 1){
+        myAdvert.innerHTML = advs[1];
+    } else if (count == 2){
+        myAdvert.innerHTML = advs[2];
+    } else {
+        count = 0;
+        myAdvert.innerHTML = advs[0];
+    }
+    console.log(count);
+    count++;
+// }
+};
