@@ -106,6 +106,7 @@ body{
     padding: 100px;
     opacity: 0.8;
     color: white;
+    animation: colour 48s ease-in-out 0s infinite alternate forwards;
 
 }
 .text-cont{
@@ -417,6 +418,25 @@ body{
     .iframe-cont > div{
         overflow: scroll;
     }
+    .service-section{
+        height: 900px;
+
+    }
+    .offers-section{
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+
+    }
+    .offers-section > section:first-child,.offers-section > section:last-child {
+        width: 100%;
+        text-align: left;
+        gap: 30px;
+    }
+    .offers-section > section:last-child aside{
+        flex-direction: row-reverse;
+    }
 }
 @media screen and (max-width: 550px) {
     .header-container, .color-sep2, .color-sep, .iframe-cont, .color-sep3{
@@ -449,6 +469,10 @@ body{
         width: 200px;
         height: 150px;
     }
+    .offers-section > section:first-child aside, .offers-section > section:last-child aside{
+        width: 100%;
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 320px) {
     .header-container, .color-sep2, .color-sep, .iframe-cont{
@@ -471,4 +495,11 @@ body{
         50%  {color:yellow; opacity: 1;}
         75%  {color:yellowgreen; opacity: 0.5;}
         100% {color:white; opacity: 0;}
+}
+@keyframes colour {
+    0%   {background-color: darkblue}
+    25%  {background-color: black }
+    50%  {background-color: rgb(2, 2, 66)}
+    75%  {background-color: black}
+    100% {background-color: darkblue}
 }
