@@ -6,9 +6,13 @@
 body{
     background-image: linear-gradient(to right, blue, blueviolet);
 }
+a{
+    text-decoration: none;
+    font-weight: 600;
+}
 form{
     width: 400px;
-    height: 750px;
+    height: 850px;
     background-color: aliceblue;
     margin: 32px auto;
     display: flex;
@@ -39,7 +43,7 @@ form span{
 }
 input{
     height: 40px;
-    border-radius: 8px;
+    border-radius: 5px;
     border: 1px solid gray;
     padding-left: 10px;
 }
@@ -48,7 +52,7 @@ input:focus{
 }
 button{
     height: 40px;
-    border-radius: 8px;
+    border-radius: 5px;
     border: none;
     background-color: blue;
     color: whitesmoke;
@@ -62,6 +66,10 @@ span p{
     align-items: center;
     gap: 4px;
 }
+.accept{
+    font-size: 14px;
+}
+
 @media screen and (max-width: 410px){
     form{
         width: 95%;
